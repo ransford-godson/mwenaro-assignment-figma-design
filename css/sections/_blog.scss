@@ -1,0 +1,133 @@
+@use "../abstracts/variables" as *;
+
+/* BLOG SECTION */
+
+.blog-wrapper {
+    width: 100%;
+    padding: 30px 8%;
+}
+
+/* FIRST ROW */
+
+.blog-row-1 {
+    text-align: center;
+
+    .ro1-content {
+        h4 {
+            font-size: 23px;
+            margin-bottom: 15px;
+
+            span {
+                color: $accent-color;
+            }
+        }
+
+        p {
+            width: 550px;
+            max-width: 100%;
+            margin: auto;
+            line-height: 1.6;
+            color: #666;
+            font-size: 13px;
+        }
+    }
+
+    /* TOP IMAGES */
+
+    > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 40px;
+
+        > div {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* TEXT ON IMAGES */
+
+    strong {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        color: $white;
+        z-index: 2;
+        font-size: 15px;
+    }
+
+    /* BUTTONS ON IMAGES */
+
+    .r-btn {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem 2rem;
+        border: 1px solid $white;
+        border-radius: 25px;
+        background: transparent;
+        color: $white;
+        z-index: 2;
+    }
+
+    > div:nth-child(2) > div:nth-child(2) button {
+        background: $blue;
+        border: none;
+    }
+}
+
+/* SECOND ROW */
+
+.blog-row-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 80px;
+
+    /* LEFT SIDE */
+
+    > div:first-child {
+        width: 45%;
+    }
+
+    strong {
+        font-size: 20px;
+        line-height: 1.5;
+
+        span {
+            color: $accent-color;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+        line-height: 1.7;
+        font-size: 13px;
+        color: #666;
+    }
+
+    /* RIGHT IMAGE */
+
+    > div:last-child {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+        height: 245px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+.btn {
+  display: flex;
+  gap: 20px;
+
+  button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+}
+
+.btn-1 {
+  background-color: white;
+  color: $gray-text;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn-2 {
+  background-color: $secondary-color;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
