@@ -1,3 +1,4 @@
+@use "sass:map";
 $primary-color: #303080;
 $secondary-color: #ff9500;
 
@@ -18,3 +19,9 @@ $footer-text: #b8b9cc;
 $border-color: #555870;
 
 $accent-color: #f5a134;
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 800
+);

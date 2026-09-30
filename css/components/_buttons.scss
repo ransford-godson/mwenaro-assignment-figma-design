@@ -8,9 +8,15 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
-  }
-}
 
+  }
+  &:hover{
+ transform: translateY(-5px);
+}
+  }
+  
+
+   
 .btn-1 {
   background-color: white;
   color: $gray-text;

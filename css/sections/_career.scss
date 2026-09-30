@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../abstracts/variables" as *;
 
 /* CAREER SECTION */
@@ -104,32 +105,34 @@
     max-width: 750px;
     margin: -25px auto 0;
 
-    /* INDIVIDUAL CARD */
-
     > div {
-        min-height: 215px;
+        max-width: 450px;
         padding: 65px 25px 25px;
         background-color: $white;
         border-radius: 10px;
         box-shadow: 0 8px 30px rgba(45, 45, 100, 0.08);
+        margin-top: 50px;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    /* CARD HEADING */
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+            background-color: aliceblue;
+        }
+    }
 
     h5 {
         max-width: 210px;
         font-size: 16px;
         line-height: 1.4;
         color: $primary-color;
-        font-weight: 500;
+       font-weight: map.get($font-weights, "bold");
         margin-bottom: 15px;
     }
-
-    /* CARD DESCRIPTION */
 
     p {
         max-width: 205px;
