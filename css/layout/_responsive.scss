@@ -261,8 +261,9 @@ body {
     }
     .row-1{
 >div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
 }
     }
 
@@ -273,9 +274,10 @@ body {
     }
 
     .row-4 {
-        grid-template-columns: 1fr;
-        gap: 25px;
+        grid-template-columns: (3 1fr);
+        gap: 15px;
         margin-top: -25px;
+        margin-left: -20px;
 
         > div {
             width: 100%;

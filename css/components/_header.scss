@@ -1,3 +1,5 @@
+
+@use "../abstracts/mixins" as *;
 @use "sass:map";
 @use "../abstracts/variables" as *;
 
@@ -7,9 +9,7 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-Center;
     position: fixed;
     top: 0;
     left: 0;

@@ -9,6 +9,7 @@
 @use "sections/news";
 @use "components/footer";
 @use "layout/responsive";
+@use "abstracts/mixins" as *;
 
 button {
    font-weight: bold;

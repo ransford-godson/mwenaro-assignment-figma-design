@@ -1,3 +1,5 @@
+
+@use '../abstracts/mixins' as *;
 @use "../abstracts/variables" as *;
 
 .footer {
@@ -76,8 +78,7 @@
 }
 
 .footer-links {
-    display: flex;
-    justify-content: center;
+  @include flex-Center;
     gap: 25px;
     margin-top: 30px;
 

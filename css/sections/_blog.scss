@@ -1,3 +1,4 @@
+@use '../abstracts/mixins' as *;
 @use "../abstracts/variables" as *;
 
 /* BLOG SECTION */
@@ -35,8 +36,8 @@
     /* TOP IMAGES */
 
     > div:nth-child(2) {
-        display: flex;
-        justify-content: center;
+       display: flex;
+    justify-content: center;
         gap: 50px;
         margin-top: 40px;
 
@@ -91,9 +92,7 @@
 /* SECOND ROW */
 
 .blog-row-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-Center;
     gap: 50px;
     margin-top: 80px;
 
